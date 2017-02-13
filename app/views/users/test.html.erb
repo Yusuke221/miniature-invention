@@ -1,0 +1,94 @@
+<div class='test-contents'>
+  <h1>Please enter or select your answer within 8 minutes</h1>
+</div>
+
+<%= form_for(@user) do |f| %>
+
+  <div class="field">
+    <div class= 'q'>
+    <h1>⑴</h1><%= image_tag '10_q.png', width:600,height:50 %><br>
+    <%= f.text_field :ten, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⑵</h1><%= image_tag '1_q.png', width:600,height:50 %><br>
+    <%= f.text_field :first, size:10  %>
+    </div>
+    <div class= 'q'>
+    <h1>⑶</h1><%= image_tag '12_q.png', width:500,height:50 %><br>
+    <%= f.text_field :twelve, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⑷</h1><%= image_tag '2_q.png', width:600,height:50 %><br>
+    <%= f.text_field :second, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⑸</h1><%= image_tag '3_q.png', width:600,height:50 %><br>
+    <%= f.text_field :third, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⑹</h1><%= image_tag '11_q.png', width:600,height:305 %><br>
+    <label>A<%= f.radio_button :eleven, '1', class: 'radio' %></label>
+    <label>B<%= f.radio_button :eleven, '2', class: 'radio' %></label>
+    <label>C<%= f.radio_button :eleven, '3', class: 'radio' %></label>
+    <label>D<%= f.radio_button :eleven, '4', class: 'radio' %></label>
+    </div>
+    <div class= 'q'>
+    <h1>⑺</h1><%= image_tag '4_q.png', width:600,height:305 %><br>
+    <label>A<%= f.radio_button :fourth, '1', class: 'radio' %></label>
+    <label>B<%= f.radio_button :fourth, '2', class: 'radio' %></label>
+    <label>C<%= f.radio_button :fourth, '3', class: 'radio' %></label>
+    <label>D<%= f.radio_button :fourth, '4', class: 'radio' %></label>
+    </div>
+    <div class= 'q'>
+    <h1>⑻</h1><%= image_tag '5_q.png', width:600,height:305 %><br>
+    <label>A<%= f.radio_button :fifth, '1', class: 'radio' %></label>
+    <label>B<%= f.radio_button :fifth, '2', class: 'radio' %></label>
+    <label>C<%= f.radio_button :fifth, '3', class: 'radio' %></label>
+    <label>D<%= f.radio_button :fifth, '4', class: 'radio' %></label>
+    </div>
+    <div class= 'q'>
+    <h1>⑼</h1><%= image_tag '16_q.png', width:600,height:305 %><br>
+    <label>A<%= f.radio_button :sixteen, '1', class: 'radio' %></label>
+    <label>B<%= f.radio_button :sixteen, '2', class: 'radio' %></label>
+    <label>C<%= f.radio_button :sixteen, '3', class: 'radio' %></label>
+    <label>D<%= f.radio_button :sixteen, '4', class: 'radio' %></label>
+    </div>
+    <div class= 'q'>
+    <h1>⑽</h1><%= image_tag '17_q.png', width:600,height:315 %><br>
+    <label>A<%= f.radio_button :seventeen, '1', class: 'radio' %></label>
+    <label>B<%= f.radio_button :seventeen, '2', class: 'radio' %></label>
+    <label>C<%= f.radio_button :seventeen, '3', class: 'radio' %></label>
+    <label>D<%= f.radio_button :seventeen, '4', class: 'radio' %></label>
+    </div>
+    <div class= 'q'>
+    <h1>⑾</h1><%= image_tag '14_q.png', width:500,height:400 %><br>
+    <%= f.text_field :fourteen, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⑿</h1><%= image_tag '13_q.png', width:600,height:430 %><br>
+    <%= f.text_field :thirteen, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⒀</h1><%= image_tag '7_q.png', width:650,height:430 %><br>
+    <%= f.text_field :seventh, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⒁</h1><%= image_tag '15_q.png', width:650,height:400 %><br>
+    <%= f.text_field :fifteen, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⒂</h1><%= image_tag '8_q.png', width:650,height:400 %><br>
+    <%= f.text_field :eighth, size:10 %>
+    </div>
+    <div class= 'q'>
+    <h1>⒃</h1><%= image_tag '9_q.png', width:680,height:450 %><br>
+    <label>A<%= f.radio_button :ninth, '1', class: 'radio' %></label>
+    <label>B<%= f.radio_button :ninth, '2', class: 'radio' %></label>
+    <label>C<%= f.radio_button :ninth, '3', class: 'radio' %></label>
+    <label>D<%= f.radio_button :ninth, '4', class: 'radio' %></label>
+    </div>
+  </div>
+  <div class="actions-t">
+    <%= f.submit 'Submit', class:'submit_b '%>
+  </div>
+<% end %>

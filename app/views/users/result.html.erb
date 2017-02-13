@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+<div class='result-top'>Test Results</div>
+<div class='result-contents'>
+  <% if @user.name == '' %>
+   <p>Your IQ test score is<h1><%= @user.point %></h1></p>
+  <% else %>
+   <p>IQ test score of Mr.<%= @user.name %> is<h1><%= @user.point %></h1></p>
+  <% end %>
+  <p>Average IQ test score in <%= @user.nationality %> is<h1><%= @average.round(2) %></h1><p>
+  <p>World average of this IQ test score is<h1><%= @allaverage.round(2) %></h1><p>
+
+    <center>
+      <div class="sosyal">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/users/:id" class="facebook">Facebook</a>
+        <a href="http://twitter.com/share?url=http://localhost:3000/users/:id" class="twitter">Twitter</a>
+        <a href="https://plus.google.com/share?url=http://localhost:3000/users/:id" class="google">Google+</a>
+        </div>
+    </center>
+
+    <table class='lank-table'>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Country</th>
+          <th>Average-IQ</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @lank = 1 %>
+        <% @users.order('AVG(point) desc').limit(10).each do |user| %>
+          <tr>
+            <td><%= @lank %>
+            <td><%= user.nationality %></td>
+            <td><%= user.avg_point.round(2) %></td>
+          </tr>
+         <% @lank += 1 %>
+        <% end %>
+      </tbody>
+    </table>
+<div class='last'>
+  <%= link_to 'HOME', new_user_path %>
+</div>
+</div>

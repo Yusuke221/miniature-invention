@@ -1,0 +1,284 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+  margin:0;
+}
+
+.contents a{
+  text-align:center;
+}
+
+.radio{
+  width:15px;
+  height:15px;
+}
+.q label{
+  font-size:20px;
+}
+
+.header{
+  background-color:black;
+  height:50px;
+}
+
+.header-left{
+  font-size:20px;
+  padding:18px 50px;
+  font-family:impact;
+  float:left;
+  color:white;
+}
+
+.header-right {
+  font-size:20px;
+  padding:17px 60px;
+  font-family:impact;
+  float:right;
+  border-left:1px solid #808080;
+  color:white;
+  text-decoration:none;
+}
+
+.lanking{
+  font-size:60px;
+  text-align:center;
+  padding:60px 0px 40px 0px;
+}
+
+.lank-table{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.lank-table.one{
+  margin-bottom: 3em;
+  border-collapse:collapse;
+}
+.lank-table th{
+  font-size:20px;
+  padding:15px 40px;
+  color:white;
+  background-color:black;
+}
+
+.lank-table td{
+  font-size:15px;
+  padding:15px 40px;
+  text-align:center;
+  font-family: "Lato","sans-serif";
+}
+
+.lank-table tr{
+  height:1em;
+}
+
+.lank-table tr:nth-child(even){
+  background-color: #eee;
+}
+
+.lank-table tr:nth-child(odd){
+  background-color: #fff;
+}
+
+.biglanking{
+  margin-left: auto;
+  margin-right: auto;
+  font-size:20px;
+}
+
+.test-contents{
+  padding:20px 50px;
+  text-align:center;
+}
+
+
+.result-top{
+  padding:20px;
+  text-align:center;
+  font-size:50px;
+}
+.result-contents p{
+  font-size:30px;
+  padding:2px;
+}
+.result-contents{
+  text-align:center;
+  font-size:20px;
+}
+
+.result-s{
+  text-align:center;
+}
+.result-pic{
+  padding:20px 670px;
+}
+.contents{
+  text-align:center;
+  float:left;
+  padding-top:30px;
+  height:300px;
+  width:400px;
+  margin:0px;
+}
+
+.contents-top{
+  padding:60px 0px 70px 0px;
+  font-size:50px;
+}
+
+.contents-center{
+  padding:0px 0px;
+}
+
+.contents-center p{
+  padding:0px;
+  font-size:25px;
+  margin:0px;
+  line-height:30px;
+}
+
+.field{
+  padding:20px 0px;
+}
+.nametext{
+  font-size:20px;
+  padding:0px 0px;
+}
+
+.nametext-country{
+  font-size:20px;
+}
+
+ .q{
+   padding:25px;
+   text-align:center;
+ }
+
+.actions{
+  padding:30px;
+}
+.actions-t{
+  text-align:center;
+  padding:0px 0px 50px 50px;
+
+}
+.submit_b{
+  width:120px;
+  height:40px;
+  font-size:20px;
+  background-color:black;
+  color:white;
+  cursor:pointer;
+  box-shadow:0px 4px #808080;
+  font-family:impact;
+}
+.submit_b:active{
+  position:relative;
+  box-shadow:none;
+  top:4px;
+}
+
+.last{
+  padding:30px;
+}
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+/*Ignore me, I'm just page styling*/
+html {font-family: 'Roboto', sans-serif;font-size:16px;line-height:1em;height:100%;}
+body {
+  background: #ffffff;
+  background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #F2F2F2 50%, #F2F2F2 50%, #F2F2F2 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#F2F2F2), color-stop(50%,#F2F2F2), color-stop(100%,#F2F2F2));
+  background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -o-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: -ms-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+  background: linear-gradient(135deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+}
+
+body {
+  background-color: #e1e1e1;
+}
+.sosyal {
+  margin: 50px auto;
+}
+.facebook {
+  background-color: #2e4a88;
+  box-shadow: 0 4px 0 #1B3D82;
+  text-shadow: 0 -1px -1px #1B3D82;
+
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 80px;
+}
+.facebook:hover {
+  background-color: #354F84;
+}
+.facebook:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #1B3D82;
+}
+.twitter {
+  background-color: #008DDE;
+  box-shadow: 0 4px 0 #0078BD;
+
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 80px;
+}
+.twitter:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #0078BD;
+}
+.twitter:hover {
+  background-color: #1397D8;
+}
+.google {
+  background-color: #CC3622;
+  box-shadow: 0 4px 0 #BA2714;
+
+  display: inline;
+  position: relative;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 14px 80px;
+}
+.google:active {
+  top: 2px;
+	box-shadow: 0 2px 0 #BA2714;
+}
+.google:hover {
+  background-color: #D04829;
+}

@@ -1,0 +1,23 @@
+<div class='biglanking'>
+<table class='lank-table'>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Country</th>
+      <th>Average-IQ</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lank = 1 %>
+    <% @users.order('AVG(point) desc').each do |user| %>
+      <tr>
+        <td><%= @lank %>
+        <td><%= user.nationality %></td>
+        <td><%= user.avg_point.round(2) %></td>
+      </tr>
+     <% @lank += 1 %>
+    <% end %>
+  </tbody>
+</table>
+</div>
